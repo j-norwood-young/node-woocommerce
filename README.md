@@ -1,10 +1,7 @@
-# DEPRECATION NOTICE
-This packages has been deprecated in favour of the official https://github.com/woocommerce/wc-api-node. Please update your dependencies.
-
 # node-woocommerce
 Connects NodeJS to the glorious world of the WooCommerce API
 
-[![Build Status](https://travis-ci.org/Receiptful/node-woocommerce.svg?branch=master)](https://travis-ci.org/Receiptful/node-woocommerce)
+This is a fork of [the woocommerce package](https://www.npmjs.com/package/woocommerce) to send full responses in the Promise form og .get. This enables us to access the important `X-WC-Total` and `X-WC-TotalPages` variables through `response.headers["X-WC-Total"]` and `response.headers["X-WC-TotalPages"]`.
 
 ## Important v2.0 Changes
 
