@@ -15,8 +15,9 @@ To allow for some automation surrounding the authentication it is now required t
 Use of promises are now available, legacy support for callbacks is still included. To use `node-woocommerce` with promises you can do the following:
 ```javascript
 wooCommerce.get('/products')
-  .then(data => {
-    // data will contain the body content from the request
+  .then(result => {
+    // result.json will contain the body content from the request
+    // result.response.headers will contain header info, including X-WC-Total and X-WC-TotalPages
   })
   .catch(err => {
     // Log the error message
